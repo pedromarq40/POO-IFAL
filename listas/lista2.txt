@@ -1,0 +1,84 @@
+Lista 2 
+
+1-
+
+a.1 Uma 'categoria' do dado, referente a sua estrutura, formato e propriedades, além de métodos, em alguns casos, como strings. Alguns exemplos são number, float.
+
+a.2 A principal diferença está na alocação de memória. um tipo primitivo tem um valor 'imutável', sendo exclusivos de uma variável só, quando ela muda, o que acontece é que o dado é substituido por outro. Já um tipo de referência, que é o caso de arrays e objetos, sempre apontarão para a mesma 'direção', sendo assim, o que muda é o objeto. Ou seja, se uma variável é a atribuição de outra ( let b = a ), e elas são arrays, por exemplo, alterar b também alterará a, pois ambos se referem ao mesmo local na memória.
+
+a.3 POO se baseia em objetos, e objetos podem ter comportamentos inesperados devido a maneira diferente de funcionamento quando se trata de memória.
+
+b. Devido quase todos os tipos de dados e estruturas de dados serem classes, um exemplo é a classe String, com seus métodos e atributos próprios, como o .lenght, assim como Number tamém tem.
+
+2-
+
+a.
+number
+string
+boolean
+object
+undefined
+object
+object
+object
+
+b. 10, "10" e true são literais dados primitivos, já os demais são objetos, como {}, [], null etc
+
+c. um erro no interpretador faz com que null seja 'confundido' como objeto, mas não deveria ser. 
+
+d. usando a classe Array padrão do js, e seu método .isArray(), que verifica se a variável é um array.
+
+3-
+
+a. 
+10
+20
+
+b. variáveis com dados primitivos são imutávies e tem seus próprios locais na memória, logo, reescrever b não altera a
+
+4-
+
+a. "Carlos"
+
+b. As duas variáveis estão apontando para o mesmo objeto. Logo, afetar pessoa2 também afeta pessoa1, pois na prática são o mesmo objeto
+
+c. 
+
+let pessoa1 = { nome : "ana"};
+let pessoa2 = { ...pessoa1 }
+
+5- 
+
+a. == serve para comparações menos rigorosas, em que as variaveis sendo comparadas são modificadas para o mesmo tipo
+
+b. === serve para comparar com tipo de dado e valor simultaneamente, em dados de referencia, compara o lugar na memória
+
+c. ambos podem ser utilizados, porém a análise mais rigorosa de ===, ele é recomendado
+
+6-
+
+a. tipos primitivos são imutávies, o método .toUpperCase() retorna uma nova string e não muda a variável. 
+
+b. para salvar, deveria salvar na variável. nome  = nome.toUpperCase()
+
+7-
+
+a. por salvar o novo preço na variável ,sem retronar direto.
+
+b. usando um return obj.preco * 0.9
+
+8. 
+
+a. 500
+
+b. por gerar resultados indesejados nos valores dos objetos
+
+c. 
+
+function ClonarConta(obj){
+
+    return {...obj}
+}
+
+let conta1 = new Conta("João", 100)
+let nova_conta = ClonarConta(conta1)
