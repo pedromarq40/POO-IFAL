@@ -1,4 +1,4 @@
-function questão_1(){
+function questao_1(){
        
     interface aluno{
         nome: string;
@@ -17,7 +17,7 @@ function questão_1(){
 
 }
 
-function questão_2(){
+function questao_2(){
 
     interface turma{
         alunos : string[]
@@ -33,7 +33,7 @@ function questão_2(){
 
 }
 
-function questão_3(){
+function questao_3(){
 
     interface registro{
         presente: boolean;
@@ -49,7 +49,7 @@ function questão_3(){
 
 }
 
-function questão_4(){
+function questao_4(){
 
     let pessoa = {
         nome : 'pedro',
@@ -62,7 +62,7 @@ function questão_4(){
 
 }
 
-function questão_5(){
+function questao_5(){
 
     interface produto{
         [chave : string] : any;
@@ -81,7 +81,7 @@ function questão_5(){
 
 }
 
-function questão_6(){
+function questao_6(){
 
     function adicionarPropriedade(objeto : any, chave : string, valor: any){
         objeto[chave] = valor
@@ -93,7 +93,7 @@ function questão_6(){
 
 }
 
-function questão_7(){
+function questao_7(){
 
     interface registro{
         atividades: string[],
@@ -111,7 +111,7 @@ function questão_7(){
 
 }
 
-function questão_8(){
+function questao_8(){
 
     interface registro{
         atividades : string[],
